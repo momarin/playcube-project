@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PlayCube - Plataforma de informações sobre filmes e séries"
+    />
+    <title>PlayCube</title>
+
+    <!-- Bootstrap min CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel min CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!---------------------- Custom CSS ---------------------->
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/carousel-styles.css" />
+    <link rel="stylesheet" href="css/responsiv.css" />
+
+    <!----------------------- Custom JS ---------------------->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header & Navegation -->
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="#"
+            aria-label="PlayCube - Página inicial"
+          >
+            <img
+              src="img/logo-clara.png"
+              alt="PlayCube"
+              class="img-fluid logo"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+            aria-label="Menu principal"
+          >
+            <ul class="navbar-nav" role="menubar">
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#" role="menuitem">Filmes</a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#" role="menuitem">Séries</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" class="main-box" role="main">
+      <div class="container container-main">
+        <div class="row main-row align-items-start">
+          <div class="col-xl-4 poster px-0 py-0">
+            <img
+              id="poster"
+              alt="Poster do filme"
+              class="poster-image shadow"
+              itemprop="image"
+            />
+          </div>
+
+          <div class="col-xl-8 content-col px-3">
+            <div class="text-content">
+              <h1
+                id="movie-title"
+                class="movie-title d-flex justify-content-center align-items-center justify-content-xl-start"
+                itemprop="name"
+              >
+                <!-- <span id="movie-date" class="movie-date"></span> -->
+              </h1>
+
+              <div class="row">
+                <div class="genre" aria-labelledby="genre-heading">
+                  <h2 class="subtitle">Gênero:</h2>
+                  <p id="genre" class="text-information" itemprop="genre"></p>
+                </div>
+
+                <div class="overview" aria-labelledby="overview-heading">
+                  <h2 id="overview-heading" class="subtitle">Sinopse:</h2>
+                  <p
+                    id="overview"
+                    class="text-information"
+                    itemprop="description"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row">
+                  <div
+                    class="col-md-6 director"
+                    aria-labelledby="director-heading"
+                  >
+                    <h2 id="director-heading" class="subtitle">
+                      Dirigido por:
+                    </h2>
+                    <p
+                      id="director"
+                      class="text-information"
+                      itemprop="director"
+                    ></p>
+                  </div>
+
+                  <div
+                    class="col-md-6 writers"
+                    aria-labelledby="writers-heading"
+                  >
+                    <h2 id="writers-heading" class="subtitle">Escrito por:</h2>
+                    <p
+                      id="writers"
+                      class="text-information"
+                      itemprop="writer"
+                    ></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div
+                    class="col-md-6 situation"
+                    aria-labelledby="situation-heading"
+                  >
+                    <h2 id="status-heading" class="subtitle">Situação:</h2>
+                    <p
+                      id="status"
+                      class="text-information"
+                      itemprop="productionStatus"
+                    ></p>
+                  </div>
+
+                  <div
+                    class="col-md-6 original-language"
+                    aria-labelledby="language-heading"
+                  >
+                    <h2 id="language-heading" class="subtitle">
+                      Idioma original:
+                    </h2>
+                    <p
+                      id="language"
+                      class="text-information"
+                      itemprop="inLanguage"
+                    ></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div
+                    class="budget col-md-6 budget mb-4"
+                    aria-labelledby="budget-heading"
+                  >
+                    <h2 id="budget-heading" class="subtitle">Orçamento:</h2>
+                    <p
+                      id="budget"
+                      class="text-information"
+                      itemprop="budget"
+                    ></p>
+                  </div>
+
+                  <div
+                    class="revenue col-md-6 revenue"
+                    aria-labelledby="income-heading"
+                  >
+                    <h2 id="revenue-heading" class="subtitle">Receita:</h2>
+                    <p
+                      id="revenue"
+                      class="text-information"
+                      itemprop="revenue"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Cast Section -->
+    <section id="cast" class="cast-box" aria-labelledby="cast-heading">
+      <div class="container container-cast text-start px-3">
+        <div
+          class="section-title d-flex align-items-center justify-content-start"
+        >
+          <h2 id="cast-heading" class="subtitle mb-0">Elenco</h2>
+          <button
+            class="btn-custom ms-3"
+            aria-label="Ver mais membros do elenco"
+          >
+            Ver mais
+          </button>
+        </div>
+
+        <div class="scroller_wrap should_fade position-relative">
+          <!-- cast carousel -->
+          <div
+            class="owl-carousel owl-theme cast-carousel"
+            role="list"
+            aria-label="Lista de atores"
+          >
+            <div class="actor-item text-center mx-2" role="listitem">
+              <!-- <div class="item rounded-circle overflow-hidden">
+              <img
+                id="actor-image"
+                src=""
+                alt="Ator"
+                class="img-fluid object-fit-cover"
+              />
+            </div>
+            <h5 id="actor-name" class="mt-2 mb-0 actor-name"></h5>
+            <h5 id="actor-chatacter" class="text-muted actor-character"></h5> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-box" aria-labelledby="reviews-heading">
+      <div class="container container-reviews text-start px-3">
+        <div
+          class="section-title d-flex align-items-center justify-content-start"
+        >
+          <h2 id="reviews-heading" class="subtitle mb-0 me-3">Resenhas</h2>
+          <button class="btn-custom" aria-label="Ver mais resenhas">
+            Ver mais
+          </button>
+        </div>
+
+        <div class="row gap-4 gap-xl-0">
+          <div
+            class="col-xl-6 review"
+            itemprop="review"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <blockquote class="card">
+              <p class="review-body"></p>
+              <footer>
+                <div
+                  itemprop="author"
+                  itemscope
+                  itemtype="https://schema.org/Person"
+                >
+                  por <span class="review-person"><b></b></span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <time></time>
+                  <span
+                    itemprop="review-rating"
+                    itemscope
+                    itemtype="https://schema.org/Rating"
+                  >
+                    <b class="rating-value"></b>/<span itemprop="best-rating"
+                      >10</span
+                    >
+                  </span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div
+            class="col-xl-6 review"
+            itemprop="review"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <blockquote class="card">
+              <p class="review-body"></p>
+              <footer>
+                <div
+                  itemprop="author"
+                  itemscope
+                  itemtype="https://schema.org/Person"
+                >
+                  por <span class="review-person"><b></b></span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <time></time>
+                  <span
+                    itemprop="review-rating"
+                    itemscope
+                    itemtype="https://schema.org/Rating"
+                  >
+                    <b itemprop="rating-value">10</b>/<span
+                      itemprop="best-rating"
+                      >10</span
+                    >
+                  </span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="media-box" aria-labelledby="media-heading">
+      <div class="container container-media px-3">
+        <h2 id="media-heading" class="subtitle">Mídia</h2>
+
+        <!-- Videos -->
+        <div class="videos mb-5" aria-labelledby="videos">
+          <div class="d-flex align-items-center justify-content-start mb-2">
+            <h3 id="videos">Vídeos <span id="videos-number"></span></h3>
+            <button class="btn-custom ms-3" aria-label="Ver mais vídeos">
+              Ver mais
+            </button>
+          </div>
+          <div
+            class="scroller_wrap should_fade fade-media videos-wrap position-relative"
+          >
+            <div class="videos-container ms-0">
+              <!-- videos carousel -->
+              <div
+                class="owl-carousel owl-theme videos-carousel"
+                role="list"
+                aria-label="Lista de vídeos"
+              >
+                <!-- <div class="item" role="listitem">
+                <video controls aria-labelledby="videos">
+                  <source
+                    src=""
+                    type=""
+                  />
+                </video>
+              </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posters -->
+        <div class="posters mb-5" aria-labelledby="posters">
+          <div class="d-flex align-items-center justify-content-start mb-2">
+            <h3 id="posters">Pôsteres <span id="posters-number"></span></h3>
+            <button class="btn-custom ms-3" aria-label="Ver mais pôsteres">
+              Ver mais
+            </button>
+          </div>
+          <div
+            class="scroller_wrap should_fade fade-media posters-wrap position-relative"
+          >
+            <div class="posters-container ms-0">
+              <!-- posters carousel -->
+              <div
+                class="owl-carousel owl-theme posters-carousel"
+                role="list"
+                aria-label="Lista de pôsteres"
+              >
+                <!-- <div class="item" role="listitem">
+                <img src="img/poster.jpg" alt="Pôster do filme Barbie" />
+              </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backdrops -->
+        <div
+          id="backdrops"
+          class="backdrops"
+          aria-labelledby="backdrops-heading"
+        >
+          <div
+            class="d-flex align-items-center justify-content-start gap-3 mb-2"
+          >
+            <h3 id="backdrops-heading">
+              Imagens de Fundo <span id="backdrops-number"></span>
+            </h3>
+            <button class="btn-custom" aria-label="Ver mais imagens de fundo">
+              Ver mais
+            </button>
+          </div>
+          <div class="backdrops-container ms-0">
+            <!-- backdrops carousel -->
+            <div
+              class="scroller_wrap should_fade fade-media backdrops-wrap position-relative"
+            >
+              <div
+                class="owl-carousel owl-theme backdrops-carousel"
+                role="list"
+                aria-label="Lista de imagens de fundo"
+              >
+                <!-- <div class="item" role="listitem">
+                <img
+                  src=""
+                  alt=""
+                />
+              </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recomendations Section -->
+    <aside
+      id="recomendations"
+      class="recomendations-box"
+      aria-labelledby="recomendations-heading"
+    >
+      <div class="container container-recomendations text-start gap-3 px-3">
+        <div class="aside-title">
+          <h2 id="recomendations-heading" class="subtitle mb-3">
+            Recomendações
+          </h2>
+        </div>
+
+        <div class="scroller_wrap should_fade fade-recomend position-relative">
+          <div
+            class="owl-carousel owl-theme recomen-carousel"
+            role="list"
+            aria-label="Lista de recomendações"
+          >
+            <!-- <div class="recomend-item text-center" role="listitem">
+            <div class="item mb-2">
+              <img
+                src="img/poster.jpg"
+                alt="Poster do filme recomendado"
+                class="shadow"
+              />
+            </div>
+            <h5 class="movie-name">Movie name</h5>
+            <h5 class="rate">30%</h5>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer
+      id="footer"
+      class="container footer-box px-3 py-0"
+      role="contentinfo"
+    >
+      <div
+        class="row container container-footer footer d-flex align-items-center justify-content-start mt-0"
+      >
+        <div class="col-xl-3 mb-2">
+          <img
+            src="img/logo-escura.png"
+            alt="PlayCube Logo"
+            class="mb-4 mb-xl-0"
+          />
+        </div>
+        <div class="col-xl-3 mb-xl-0">
+          <a href="#" class="d-block mb-2">Sobre</a>
+          <a href="#" class="d-block mb-2">Contato</a>
+          <a href="#" class="d-block mb-2">Suporte</a>
+        </div>
+        <div class="col-xl-3 mb-xl-0">
+          <a href="#" class="d-block mb-2">Adicione um Filme</a>
+          <a href="#" class="d-block mb-2">Adicione uma Série</a>
+          <a href="#" class="d-block mb-2">Discussões</a>
+        </div>
+        <div class="col-xl-3 mb-xl-0">
+          <a href="#" class="d-block mb-2">Termos de Uso</a>
+          <a href="#" class="d-block mb-2">Políticas de Privacidade</a>
+          <a href="#" class="d-block">Diretrizes</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQuery CDN Links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- JS Owl Carousel CDN links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

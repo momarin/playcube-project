@@ -1,0 +1,15 @@
+/* IMPORTS */
+/* Font - League Spartan */
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Butterfly+Kids&family=Crafty+Girls&family=League+Spartan:wght@100..900&family=Poppins:wght@200;400;600&family=Twinkle+Star&display=swap");
+
+:root {
+  --text-content: #333333;
+  --title-content: #102c57;
+  --title2-content: #dac0a3;
+  --shadow: #102c5733;
+  --bg-main: #f8f0e5;
+  --bg-section: #eadbc8;
+  --fade: #eadbc800;
+  --red: #ff0000;
+  --white: #ffffff;
+}
