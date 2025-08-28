@@ -21,10 +21,11 @@
         ● A página está consumindo a api através de ID, então a análise pode ser feita através de qualquer filme. Uma observação importante é que filmes com títulos grandes ou com muita gente envolvida nas sessões "dirigido por" ou "escrito por" alterarão consideravelmente o design.
 
 # Aprendizado:
-    ● Esse foi um grande desafio para mim, o maior projeto que eu já tinha feito para testar minhas habilidades. O que fica de lição principal para mim é a organizar minhas ideias e depois passá-las ao código;
-    ● Apesar de eu ter sentido dificuldade em lidar com o Bootstrap no início, ao final do desafio eu já estava achando bem melhor lidar com ele do que com o CSS vanilla;
+    ● Esse foi um grande desafio para mim, o maior projeto que eu já tinha feito para testar minhas habilidades. O que fica de lição principal para é organizar minhas ideias e depois passá-las ao código;
+    ● Apesar de eu ter sentido dificuldade em lidar com o Bootstrap no início, ao final do desafio eu já estava achando bem melhor usá-lo do que ficar só com o CSS vanilla;
     ● O HTML me assustou pelo tamanho, mas quando iniciei o JS, o primeiro foi encolhendo e fazendo mais sentido para mim.
 
 # Observações gerais:
     Alguns comentários estão em inglês e outros em português. Acredito que isso acontecia de acordo com meu nível de cansaço e só percebi na revisão final. Deixei os divisores de seção em inglês, pois foi assim que comecei, mas alterei os comentários que notei para português, porém alguns podem ter passado desapercebidos.
+
 
