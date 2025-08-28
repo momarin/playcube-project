@@ -1,4 +1,4 @@
-# Projeto PlayCube para teste de vaga Front-End no Jornal O POVO;
+# Projeto PlayCube para teste de vaga Front-End;
 
 # Aterações principais em relação ao design original:
     ● O design principal tem seus espaçamentos, em sua maioria, em divisores de 5. Como o Bootstrap usa o Rem e os divisores de 4, tomei a liberdade para deixar alguns espaçamentos com um valor aproximado ao original, usando as classes do Bootstrap.
@@ -27,3 +27,4 @@
 
 # Observações gerais:
     Alguns comentários estão em inglês e outros em português. Acredito que isso acontecia de acordo com meu nível de cansaço e só percebi na revisão final. Deixei os divisores de seção em inglês, pois foi assim que comecei, mas alterei os comentários que notei para português, porém alguns podem ter passado desapercebidos.
+
